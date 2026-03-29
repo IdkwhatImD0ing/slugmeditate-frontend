@@ -1,0 +1,25 @@
+{
+  "routes": [
+    {
+      "src": "/(.+)\\.splat$",
+      "headers": {
+        "Content-Type": "application/octet-stream",
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/(.+)\\.mp3$",
+      "headers": {
+        "Content-Type": "audio/mpeg",
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/(.+)\\.mp4$",
+      "headers": {
+        "Content-Type": "video/mp4",
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    }
+  ]
+}
